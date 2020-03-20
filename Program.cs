@@ -119,6 +119,8 @@ namespace mdt112_assignment2
         ///from small, medium to large with an option to sort reversely.
         ///</summary>
         public static List<Garbage> SortGarbageListBySize( List<Garbage> garbageList, bool isReverse ){
+            garbageList.Sort();
+            garbageList.Reverse();
             return garbageList;
         }
 
@@ -219,6 +221,7 @@ namespace mdt112_assignment2
 
         static void Main(string[] args)
         {
+           
             TestCase1();
             TestCase2();
             TestCase3();
